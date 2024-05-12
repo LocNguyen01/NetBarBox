@@ -41,7 +41,7 @@ namespace NetBarBox
         }
 
         private Form currentExtraForm;
-        private void OpenExtraForm(Form extraForm)
+        private void OpenExtraForm(Form extraForm) //mở form ko cần trang form mới
         {
             if (currentExtraForm != null)
             {
@@ -64,6 +64,7 @@ namespace NetBarBox
         private void bt_goinhanvien_Click(object sender, EventArgs e)
         {
             OpenExtraForm(new FGoiNhanVien());
+            label2.Text = "Gọi Nhân Viên";
         }
 
         private void bt_giohang_Click(object sender, EventArgs e)
@@ -73,6 +74,7 @@ namespace NetBarBox
         private void bt_muado_Click(object sender, EventArgs e)
         {
             OpenExtraForm(new FMuaDo());
+            label2.Text = "Mua Đồ";
         }
 
         private void bt_thongtinkhachhang_Click(object sender, EventArgs e)
@@ -111,12 +113,33 @@ namespace NetBarBox
 
         private void bt_thongbao_Click(object sender, EventArgs e)
         {
-
+            OpenExtraForm(new FThongBao());
+            label2.Text = "Thông Báo";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_trangchu_Click(object sender, EventArgs e)
+        {
+            label2.Text = "Trang Chủ";
         }
     }
 }

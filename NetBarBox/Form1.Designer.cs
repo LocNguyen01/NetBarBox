@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bt_giohang = new System.Windows.Forms.Button();
             this.bt_thongbao = new System.Windows.Forms.Button();
             this.bt_goinhanvien = new System.Windows.Forms.Button();
             this.bt_muado = new System.Windows.Forms.Button();
@@ -40,18 +39,24 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bt_giohang = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.bt_trangchu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.panel1.Controls.Add(this.bt_trangchu);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.bt_giohang);
             this.panel1.Controls.Add(this.bt_thongbao);
             this.panel1.Controls.Add(this.bt_goinhanvien);
             this.panel1.Controls.Add(this.bt_muado);
@@ -67,26 +72,10 @@
             this.pictureBox1.Location = new System.Drawing.Point(11, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(229, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // bt_giohang
-            // 
-            this.bt_giohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bt_giohang.FlatAppearance.BorderSize = 0;
-            this.bt_giohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_giohang.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_giohang.ForeColor = System.Drawing.Color.White;
-            this.bt_giohang.Image = ((System.Drawing.Image)(resources.GetObject("bt_giohang.Image")));
-            this.bt_giohang.Location = new System.Drawing.Point(64, 529);
-            this.bt_giohang.Margin = new System.Windows.Forms.Padding(0);
-            this.bt_giohang.Name = "bt_giohang";
-            this.bt_giohang.Size = new System.Drawing.Size(106, 107);
-            this.bt_giohang.TabIndex = 4;
-            this.bt_giohang.UseVisualStyleBackColor = false;
-            this.bt_giohang.Click += new System.EventHandler(this.bt_giohang_Click);
             // 
             // bt_thongbao
             // 
@@ -97,7 +86,7 @@
             this.bt_thongbao.ForeColor = System.Drawing.Color.White;
             this.bt_thongbao.Image = ((System.Drawing.Image)(resources.GetObject("bt_thongbao.Image")));
             this.bt_thongbao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_thongbao.Location = new System.Drawing.Point(0, 110);
+            this.bt_thongbao.Location = new System.Drawing.Point(0, 238);
             this.bt_thongbao.Margin = new System.Windows.Forms.Padding(0);
             this.bt_thongbao.Name = "bt_thongbao";
             this.bt_thongbao.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -117,7 +106,7 @@
             this.bt_goinhanvien.ForeColor = System.Drawing.Color.White;
             this.bt_goinhanvien.Image = ((System.Drawing.Image)(resources.GetObject("bt_goinhanvien.Image")));
             this.bt_goinhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_goinhanvien.Location = new System.Drawing.Point(0, 302);
+            this.bt_goinhanvien.Location = new System.Drawing.Point(0, 366);
             this.bt_goinhanvien.Margin = new System.Windows.Forms.Padding(0);
             this.bt_goinhanvien.Name = "bt_goinhanvien";
             this.bt_goinhanvien.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -137,7 +126,7 @@
             this.bt_muado.ForeColor = System.Drawing.Color.White;
             this.bt_muado.Image = ((System.Drawing.Image)(resources.GetObject("bt_muado.Image")));
             this.bt_muado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_muado.Location = new System.Drawing.Point(0, 238);
+            this.bt_muado.Location = new System.Drawing.Point(0, 302);
             this.bt_muado.Margin = new System.Windows.Forms.Padding(0);
             this.bt_muado.Name = "bt_muado";
             this.bt_muado.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -219,16 +208,84 @@
             this.dataGridView1.Size = new System.Drawing.Size(250, 223);
             this.dataGridView1.TabIndex = 5;
             // 
+            // bt_giohang
+            // 
+            this.bt_giohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(43)))));
+            this.bt_giohang.FlatAppearance.BorderSize = 0;
+            this.bt_giohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_giohang.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_giohang.ForeColor = System.Drawing.Color.White;
+            this.bt_giohang.Image = ((System.Drawing.Image)(resources.GetObject("bt_giohang.Image")));
+            this.bt_giohang.Location = new System.Drawing.Point(1033, 9);
+            this.bt_giohang.Margin = new System.Windows.Forms.Padding(0);
+            this.bt_giohang.Name = "bt_giohang";
+            this.bt_giohang.Size = new System.Drawing.Size(86, 59);
+            this.bt_giohang.TabIndex = 4;
+            this.bt_giohang.UseVisualStyleBackColor = false;
+            this.bt_giohang.Click += new System.EventHandler(this.bt_giohang_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(995, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "User";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(17, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 26);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Trang Chủ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(43)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.bt_giohang);
+            this.panel2.Location = new System.Drawing.Point(241, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1119, 70);
+            this.panel2.TabIndex = 5;
+            // 
             // panel3
             // 
-            this.panel3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.panel3.Location = new System.Drawing.Point(241, 66);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1360, 664);
-            this.panel3.TabIndex = 5;
+            this.panel3.Size = new System.Drawing.Size(1119, 598);
+            this.panel3.TabIndex = 7;
+            // 
+            // bt_trangchu
+            // 
+            this.bt_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bt_trangchu.FlatAppearance.BorderSize = 0;
+            this.bt_trangchu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_trangchu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_trangchu.ForeColor = System.Drawing.Color.White;
+            this.bt_trangchu.Image = ((System.Drawing.Image)(resources.GetObject("bt_trangchu.Image")));
+            this.bt_trangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_trangchu.Location = new System.Drawing.Point(0, 110);
+            this.bt_trangchu.Margin = new System.Windows.Forms.Padding(0);
+            this.bt_trangchu.Name = "bt_trangchu";
+            this.bt_trangchu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.bt_trangchu.Size = new System.Drawing.Size(245, 64);
+            this.bt_trangchu.TabIndex = 7;
+            this.bt_trangchu.Text = "       Trang Chủ";
+            this.bt_trangchu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_trangchu.UseVisualStyleBackColor = false;
+            this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
             // 
             // Form1
             // 
@@ -238,6 +295,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1360, 664);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,6 +307,8 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -259,14 +319,18 @@
         private System.Windows.Forms.Button bt_thongtinkhachhang;
         private System.Windows.Forms.Button bt_muado;
         private System.Windows.Forms.Button bt_goinhanvien;
-        private System.Windows.Forms.Button bt_giohang;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bt_thongbao;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button bt_giohang;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button bt_trangchu;
     }
 }
 
