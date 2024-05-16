@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_trangchu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_thongbao = new System.Windows.Forms.Button();
             this.bt_goinhanvien = new System.Windows.Forms.Button();
@@ -38,23 +39,22 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bt_giohang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bt_trangchu = new System.Windows.Forms.Button();
+            this.bt_naptien = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.panel1.Controls.Add(this.bt_naptien);
             this.panel1.Controls.Add(this.bt_trangchu);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.bt_thongbao);
@@ -65,6 +65,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 676);
             this.panel1.TabIndex = 0;
+            // 
+            // bt_trangchu
+            // 
+            this.bt_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bt_trangchu.FlatAppearance.BorderSize = 0;
+            this.bt_trangchu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_trangchu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_trangchu.ForeColor = System.Drawing.Color.White;
+            this.bt_trangchu.Image = ((System.Drawing.Image)(resources.GetObject("bt_trangchu.Image")));
+            this.bt_trangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_trangchu.Location = new System.Drawing.Point(0, 110);
+            this.bt_trangchu.Margin = new System.Windows.Forms.Padding(0);
+            this.bt_trangchu.Name = "bt_trangchu";
+            this.bt_trangchu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.bt_trangchu.Size = new System.Drawing.Size(245, 64);
+            this.bt_trangchu.TabIndex = 7;
+            this.bt_trangchu.Text = "       Trang Chủ";
+            this.bt_trangchu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_trangchu.UseVisualStyleBackColor = false;
+            this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
             // 
             // pictureBox1
             // 
@@ -106,7 +126,7 @@
             this.bt_goinhanvien.ForeColor = System.Drawing.Color.White;
             this.bt_goinhanvien.Image = ((System.Drawing.Image)(resources.GetObject("bt_goinhanvien.Image")));
             this.bt_goinhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_goinhanvien.Location = new System.Drawing.Point(0, 366);
+            this.bt_goinhanvien.Location = new System.Drawing.Point(0, 430);
             this.bt_goinhanvien.Margin = new System.Windows.Forms.Padding(0);
             this.bt_goinhanvien.Name = "bt_goinhanvien";
             this.bt_goinhanvien.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -191,7 +211,6 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.textBox2);
             this.panel4.Location = new System.Drawing.Point(1098, 417);
@@ -199,14 +218,6 @@
             this.panel4.Size = new System.Drawing.Size(250, 247);
             this.panel4.TabIndex = 4;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(250, 223);
-            this.dataGridView1.TabIndex = 5;
             // 
             // bt_giohang
             // 
@@ -261,31 +272,31 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(44)))), ((int)(((byte)(57)))));
             this.panel3.Location = new System.Drawing.Point(241, 66);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1119, 598);
             this.panel3.TabIndex = 7;
             // 
-            // bt_trangchu
+            // bt_naptien
             // 
-            this.bt_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bt_trangchu.FlatAppearance.BorderSize = 0;
-            this.bt_trangchu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_trangchu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_trangchu.ForeColor = System.Drawing.Color.White;
-            this.bt_trangchu.Image = ((System.Drawing.Image)(resources.GetObject("bt_trangchu.Image")));
-            this.bt_trangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_trangchu.Location = new System.Drawing.Point(0, 110);
-            this.bt_trangchu.Margin = new System.Windows.Forms.Padding(0);
-            this.bt_trangchu.Name = "bt_trangchu";
-            this.bt_trangchu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_trangchu.Size = new System.Drawing.Size(245, 64);
-            this.bt_trangchu.TabIndex = 7;
-            this.bt_trangchu.Text = "       Trang Chủ";
-            this.bt_trangchu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_trangchu.UseVisualStyleBackColor = false;
-            this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
+            this.bt_naptien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bt_naptien.FlatAppearance.BorderSize = 0;
+            this.bt_naptien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_naptien.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_naptien.ForeColor = System.Drawing.Color.White;
+            this.bt_naptien.Image = ((System.Drawing.Image)(resources.GetObject("bt_naptien.Image")));
+            this.bt_naptien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_naptien.Location = new System.Drawing.Point(0, 366);
+            this.bt_naptien.Margin = new System.Windows.Forms.Padding(0);
+            this.bt_naptien.Name = "bt_naptien";
+            this.bt_naptien.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.bt_naptien.Size = new System.Drawing.Size(245, 64);
+            this.bt_naptien.TabIndex = 8;
+            this.bt_naptien.Text = "       Nạp Tiền";
+            this.bt_naptien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_naptien.UseVisualStyleBackColor = false;
+            this.bt_naptien.Click += new System.EventHandler(this.bt_naptien_Click);
             // 
             // Form1
             // 
@@ -306,7 +317,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -322,7 +332,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bt_thongbao;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button bt_giohang;
@@ -331,6 +340,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button bt_trangchu;
+        private System.Windows.Forms.Button bt_naptien;
     }
 }
 

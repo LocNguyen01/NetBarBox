@@ -139,7 +139,14 @@ namespace NetBarBox
 
         private void bt_trangchu_Click(object sender, EventArgs e)
         {
+            OpenExtraForm(new FTrangChu());
             label2.Text = "Trang Chủ";
+        }
+
+        private void bt_naptien_Click(object sender, EventArgs e)
+        {
+            OpenExtraForm(new FNapTien());
+            label2.Text = "Nạp Tiền";
         }
     }
 }
