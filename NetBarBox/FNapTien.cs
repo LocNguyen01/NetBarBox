@@ -16,7 +16,6 @@ namespace NetBarBox
         {
             InitializeComponent();
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             panel1.BackColor = Color.FromArgb(65, 173, 204);
@@ -25,6 +24,36 @@ namespace NetBarBox
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             panel3.BackColor = Color.FromArgb(65, 173, 204);
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            panel4.BackColor = Color.FromArgb(65, 173, 204);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            panel5.BackColor = Color.FromArgb(65, 173, 204);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            panel6.BackColor = Color.FromArgb(65, 173, 204);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.FromArgb(65, 173, 204);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.FromArgb(55, 57, 71);
+            panel2.BackColor = Color.FromArgb(55, 57, 71);
+            panel3.BackColor = Color.FromArgb(55, 57, 71);
+            panel4.BackColor = Color.FromArgb(55, 57, 71);
+            panel5.BackColor = Color.FromArgb(55, 57, 71);
+            panel6.BackColor = Color.FromArgb(55, 57, 71);
         }
     }
 }
