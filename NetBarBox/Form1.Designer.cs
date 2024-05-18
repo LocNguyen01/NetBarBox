@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_naptien = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_thongbao = new System.Windows.Forms.Button();
@@ -39,12 +40,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.bt_giohang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bt_naptien = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -65,6 +64,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 676);
             this.panel1.TabIndex = 0;
+            // 
+            // bt_naptien
+            // 
+            this.bt_naptien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bt_naptien.FlatAppearance.BorderSize = 0;
+            this.bt_naptien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_naptien.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_naptien.ForeColor = System.Drawing.Color.White;
+            this.bt_naptien.Image = ((System.Drawing.Image)(resources.GetObject("bt_naptien.Image")));
+            this.bt_naptien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_naptien.Location = new System.Drawing.Point(0, 366);
+            this.bt_naptien.Margin = new System.Windows.Forms.Padding(0);
+            this.bt_naptien.Name = "bt_naptien";
+            this.bt_naptien.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.bt_naptien.Size = new System.Drawing.Size(245, 64);
+            this.bt_naptien.TabIndex = 8;
+            this.bt_naptien.Text = "       Nạp Tiền";
+            this.bt_naptien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_naptien.UseVisualStyleBackColor = false;
+            this.bt_naptien.Click += new System.EventHandler(this.bt_naptien_Click);
             // 
             // bt_trangchu
             // 
@@ -219,28 +238,12 @@
             this.panel4.TabIndex = 4;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // bt_giohang
-            // 
-            this.bt_giohang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(43)))));
-            this.bt_giohang.FlatAppearance.BorderSize = 0;
-            this.bt_giohang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_giohang.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_giohang.ForeColor = System.Drawing.Color.White;
-            this.bt_giohang.Image = ((System.Drawing.Image)(resources.GetObject("bt_giohang.Image")));
-            this.bt_giohang.Location = new System.Drawing.Point(1033, 9);
-            this.bt_giohang.Margin = new System.Windows.Forms.Padding(0);
-            this.bt_giohang.Name = "bt_giohang";
-            this.bt_giohang.Size = new System.Drawing.Size(86, 59);
-            this.bt_giohang.TabIndex = 4;
-            this.bt_giohang.UseVisualStyleBackColor = false;
-            this.bt_giohang.Click += new System.EventHandler(this.bt_giohang_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(995, 28);
+            this.label1.Location = new System.Drawing.Point(1006, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 17);
             this.label1.TabIndex = 5;
@@ -264,7 +267,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(43)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.bt_giohang);
             this.panel2.Location = new System.Drawing.Point(241, -1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1119, 70);
@@ -277,26 +279,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1119, 598);
             this.panel3.TabIndex = 7;
-            // 
-            // bt_naptien
-            // 
-            this.bt_naptien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bt_naptien.FlatAppearance.BorderSize = 0;
-            this.bt_naptien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_naptien.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_naptien.ForeColor = System.Drawing.Color.White;
-            this.bt_naptien.Image = ((System.Drawing.Image)(resources.GetObject("bt_naptien.Image")));
-            this.bt_naptien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_naptien.Location = new System.Drawing.Point(0, 366);
-            this.bt_naptien.Margin = new System.Windows.Forms.Padding(0);
-            this.bt_naptien.Name = "bt_naptien";
-            this.bt_naptien.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_naptien.Size = new System.Drawing.Size(245, 64);
-            this.bt_naptien.TabIndex = 8;
-            this.bt_naptien.Text = "       Nạp Tiền";
-            this.bt_naptien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_naptien.UseVisualStyleBackColor = false;
-            this.bt_naptien.Click += new System.EventHandler(this.bt_naptien_Click);
             // 
             // Form1
             // 
@@ -334,7 +316,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button bt_thongbao;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button bt_giohang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;

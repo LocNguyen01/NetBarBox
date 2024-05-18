@@ -66,11 +66,6 @@ namespace NetBarBox
             OpenExtraForm(new FGoiNhanVien());
             label2.Text = "Gọi Nhân Viên";
         }
-
-        private void bt_giohang_Click(object sender, EventArgs e)
-        {
-            OpenExtraForm(new FGioHang());
-        }
         private void bt_muado_Click(object sender, EventArgs e)
         {
             OpenExtraForm(new FMuaDo());
