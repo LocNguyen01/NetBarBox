@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NetBarBox.Properties
+namespace GUI.Properties
 {
 
 

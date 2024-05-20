@@ -1,6 +1,6 @@
-﻿namespace NetBarBox
+﻿namespace GUI
 {
-    partial class Form1
+    partial class FMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_logout = new System.Windows.Forms.Button();
             this.bt_naptien = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,7 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bt_logout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -66,6 +66,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 676);
             this.panel1.TabIndex = 0;
+            // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.bt_logout.FlatAppearance.BorderSize = 0;
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_logout.ForeColor = System.Drawing.Color.White;
+            this.bt_logout.Image = ((System.Drawing.Image)(resources.GetObject("bt_logout.Image")));
+            this.bt_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_logout.Location = new System.Drawing.Point(0, 494);
+            this.bt_logout.Margin = new System.Windows.Forms.Padding(0);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.bt_logout.Size = new System.Drawing.Size(245, 64);
+            this.bt_logout.TabIndex = 9;
+            this.bt_logout.Text = "       Đăng Xuất";
+            this.bt_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
             // 
             // bt_naptien
             // 
@@ -283,26 +303,7 @@
             this.panel3.Size = new System.Drawing.Size(1119, 598);
             this.panel3.TabIndex = 7;
             // 
-            // bt_logout
-            // 
-            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.bt_logout.FlatAppearance.BorderSize = 0;
-            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_logout.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_logout.ForeColor = System.Drawing.Color.White;
-            this.bt_logout.Image = ((System.Drawing.Image)(resources.GetObject("bt_logout.Image")));
-            this.bt_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_logout.Location = new System.Drawing.Point(0, 494);
-            this.bt_logout.Margin = new System.Windows.Forms.Padding(0);
-            this.bt_logout.Name = "bt_logout";
-            this.bt_logout.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_logout.Size = new System.Drawing.Size(245, 64);
-            this.bt_logout.TabIndex = 9;
-            this.bt_logout.Text = "       Gọi Nhân Viên";
-            this.bt_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_logout.UseVisualStyleBackColor = false;
-            // 
-            // Form1
+            // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -315,7 +316,7 @@
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "FMain";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

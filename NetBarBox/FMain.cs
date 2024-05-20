@@ -6,13 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
-namespace NetBarBox
+namespace GUI
 {
-    public partial class Form1 : Form
+    public partial class FMain : Form
     {
-        public Form1()
+        public FMain()
         {
             InitializeComponent();
             customize_bangthongtin();
@@ -143,6 +143,13 @@ namespace NetBarBox
         {
             OpenExtraForm(new FTrangChu());
             label2.Text = "Trang Chủ";
+        }
+
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FDangNhap fDangNhap = new FDangNhap();
+            fDangNhap.ShowDialog();
         }
     }
 }

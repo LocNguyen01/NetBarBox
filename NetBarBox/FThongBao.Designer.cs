@@ -1,4 +1,4 @@
-﻿namespace NetBarBox
+﻿namespace GUI
 {
     partial class FThongBao
     {

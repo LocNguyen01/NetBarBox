@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NetBarBox
+namespace GUI
 {
-    public partial class FormLogin : Form
+    public partial class FDangNhap : Form
     {
-        public FormLogin()
+        public FDangNhap()
         {
             InitializeComponent();
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
+        private void FDangNhap_Load(object sender, EventArgs e)
         {
             textBox1.Text = "Username";
             textBox2.Text = "Password";
@@ -72,6 +72,8 @@ namespace NetBarBox
             {
                 MessageBox.Show("Không được bỏ trống tài khoản hoặc mật khẩu", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            FMain fMAin = new FMain();
+            fMAin.Show();
         }
     }
 }
