@@ -112,11 +112,6 @@ namespace NetBarBox
             label2.Text = "Thông Báo";
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -142,6 +137,12 @@ namespace NetBarBox
         {
             OpenExtraForm(new FNapTien());
             label2.Text = "Nạp Tiền";
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            OpenExtraForm(new FTrangChu());
+            label2.Text = "Trang Chủ";
         }
     }
 }

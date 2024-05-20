@@ -45,8 +45,25 @@ namespace NetBarBox
             }
         }
 
+        private Form currentExtraForm;
+        private void OpenExtraForm(Form extraForm) //mở form ko cần trang form mới
+        {
+            if (currentExtraForm != null)
+            {
+                currentExtraForm.Close();
+            }
+            currentExtraForm = extraForm;
+            extraForm.TopLevel = false;
+            extraForm.FormBorderStyle = FormBorderStyle.None;
+            extraForm.Dock = DockStyle.Fill;
+            panel2.Controls.Add(extraForm);
+            panel2.Tag = extraForm;
+            extraForm.BringToFront();
+            extraForm.Show();
+        }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            OpenExtraForm( new FGioHang());
         }
     }
 }
