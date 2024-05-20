@@ -15,6 +15,26 @@ namespace GUI
         public FMuaDo()
         {
             InitializeComponent();
+            panel1.Visible = true;
+        }
+        private void show_panel() 
+        { 
+            if (panel1.Visible == false) 
+            {
+                panel1.Visible = true;
+            }
+        }
+
+        private void hide_panel(Panel panelgiohang)
+        {
+            if (panelgiohang.Visible == true) 
+            {
+                show_panel();
+                panelgiohang.Visible = false;
+            } else
+            {
+                panelgiohang.Visible = true;
+            }
         }
         private void FMuaDo_Load(object sender, EventArgs e)
         {
@@ -64,6 +84,7 @@ namespace GUI
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             OpenExtraForm( new FGioHang());
+            hide_panel(panel1);
         }
     }
 }

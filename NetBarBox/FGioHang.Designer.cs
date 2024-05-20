@@ -36,9 +36,10 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(80, 56);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.panel1.Location = new System.Drawing.Point(83, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(939, 495);
+            this.panel1.Size = new System.Drawing.Size(936, 499);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
