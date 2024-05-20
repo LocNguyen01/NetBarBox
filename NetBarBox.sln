@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "NetBarBox\GUI.csproj", "{ED583A79-130F-4D45-8A3C-DEFB5083CD98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation Layer", "NetBarBox\Presentation Layer.csproj", "{ED583A79-130F-4D45-8A3C-DEFB5083CD98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0B83CF45-BDD0-4401-87C4-DBEAE67EF45E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data Access Layer", "DAL\Data Access Layer.csproj", "{0B83CF45-BDD0-4401-87C4-DBEAE67EF45E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BNL\BLL.csproj", "{C9E509A2-C677-4669-96C1-E85F37E4C063}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business Logic Layer", "BNL\Business Logic Layer.csproj", "{C9E509A2-C677-4669-96C1-E85F37E4C063}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

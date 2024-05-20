@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
+    <ProjectReference Include="..\DAL\Data Access Layer.csproj">
       <Project>{0b83cf45-bdd0-4401-87c4-dbeae67ef45e}</Project>
-      <Name>DAL</Name>
+      <Name>Data Access Layer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

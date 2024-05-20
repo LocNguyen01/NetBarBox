@@ -143,9 +143,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BNL\BLL.csproj">
+    <ProjectReference Include="..\BNL\Business Logic Layer.csproj">
       <Project>{c9e509a2-c677-4669-96c1-e85f37e4c063}</Project>
-      <Name>BLL</Name>
+      <Name>Business Logic Layer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
