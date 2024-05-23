@@ -16,5 +16,26 @@ namespace GUI
         {
             InitializeComponent();
         }
+        private int imageNumber = 1;
+        private void loadNextImage()
+        {
+            if(imageNumber == 3) 
+            {
+                imageNumber = 1;
+            }
+            pictureBox1.ImageLocation = string.Format(@"Images\{0}.jqp", imageNumber);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            imageNumber++;
+        }   
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            loadNextImage();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
