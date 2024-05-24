@@ -24,7 +24,6 @@ namespace GUI
                 imageNumber = 1;
             }
             pictureBox1.ImageLocation = string.Format(@"Images\{0}.jqp", imageNumber);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             imageNumber++;
         }   
 

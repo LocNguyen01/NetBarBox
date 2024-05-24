@@ -96,16 +96,6 @@ namespace GUI
             hide_panel();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void bt_thongbao_Click(object sender, EventArgs e)
         {
             OpenExtraForm(new FThongBao());
@@ -145,11 +135,38 @@ namespace GUI
             label2.Text = "Trang Chủ";
         }
 
+        private int imageNumber = 1;
+        private void loadNextImage()
+        {
+            if(imageNumber == 10) 
+            {
+                imageNumber = 1;
+            }
+            pictureBox2.ImageLocation = string.Format(@"Images\{0}.jpg", imageNumber);
+            imageNumber++;
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            loadNextImage();
+        }
+
+
+
+        bool IsLogout = true;
         private void bt_logout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            IsLogout = false;
+            this.Close();
             FDangNhap fDangNhap = new FDangNhap();
-            fDangNhap.ShowDialog();
+            fDangNhap.Show();
+        }
+
+        private void FMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(IsLogout)
+            {
+                Application.Exit();
+            }
         }
     }
 }

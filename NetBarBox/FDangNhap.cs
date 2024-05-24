@@ -15,6 +15,7 @@ namespace GUI
         public FDangNhap()
         {
             InitializeComponent();
+            label2.Visible = false;
         }
 
         private void FDangNhap_Load(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace GUI
             {
                 textBox2.Text = "";
                 textBox2.ForeColor = Color.White;
-                
+                textBox2.UseSystemPasswordChar = true;
             }
         }
 
@@ -63,6 +64,7 @@ namespace GUI
             {
                 textBox2.Text = "Password";
                 textBox2.ForeColor = Color.Silver;
+                textBox2.UseSystemPasswordChar = false;
             }
         }
 
@@ -70,10 +72,16 @@ namespace GUI
         {
             if (textBox1.Text == "Username" || textBox2.Text == "Password")
             {
-                MessageBox.Show("Không được bỏ trống tài khoản hoặc mật khẩu", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                label2.Visible = true;
             }
-            FMain fMAin = new FMain();
+            /*FMain fMAin = new FMain();
             fMAin.Show();
+            this.Hide();*/
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Visible = false;
         }
     }
 }
