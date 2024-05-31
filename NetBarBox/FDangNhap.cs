@@ -16,6 +16,7 @@ namespace GUI
         {
             InitializeComponent();
             label2.Visible = false;
+            pictureBox5.Visible = false;
         }
 
         private void FDangNhap_Load(object sender, EventArgs e)
@@ -82,6 +83,26 @@ namespace GUI
         private void timer1_Tick(object sender, EventArgs e)
         {
             label2.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e) //an hien password
+        {
+            if (textBox2.UseSystemPasswordChar == true)
+            {
+                textBox2.UseSystemPasswordChar = false;
+                pictureBox4.Visible = false;
+                pictureBox5.Visible = true;
+            }
+            
+        }
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (textBox2.UseSystemPasswordChar == false)
+            {
+                textBox2.UseSystemPasswordChar = true;
+                pictureBox4.Visible = true;
+                pictureBox5.Visible = false;
+            }
         }
     }
 }
