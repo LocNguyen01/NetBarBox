@@ -76,21 +76,10 @@ namespace GUI
         {
             show_panel(panel4);
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             hide_panel();
         }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             hide_panel();
@@ -101,22 +90,6 @@ namespace GUI
             OpenExtraForm(new FThongBao());
             label2.Text = "Thông Báo";
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void bt_trangchu_Click(object sender, EventArgs e)
         {
             OpenExtraForm(new FTrangChu());
@@ -134,24 +107,6 @@ namespace GUI
             OpenExtraForm(new FTrangChu());
             label2.Text = "Trang Chủ";
         }
-
-        private int imageNumber = 1;
-        private void loadNextImage()
-        {
-            if(imageNumber == 10) 
-            {
-                imageNumber = 1;
-            }
-            pictureBox2.ImageLocation = string.Format(@"Images\{0}.jpg", imageNumber);
-            imageNumber++;
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            loadNextImage();
-        }
-
-
-
         bool IsLogout = true;
         private void bt_logout_Click(object sender, EventArgs e)
         {

@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void FGoiNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
